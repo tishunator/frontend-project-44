@@ -8,7 +8,7 @@ const runBrainProgression = () => {
   let i = 0
   while (i < 3) {
     let result = []
-    let randomProgressiveNumber = getRandomInt(10)
+    let randomProgressiveNumber = getRandomInt(10)+1;
     for (let n = randomProgressiveNumber; result.length < 10; n += randomProgressiveNumber) {
       result.push(randomProgressiveNumber + n)
     }
