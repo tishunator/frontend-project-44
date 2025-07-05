@@ -3,7 +3,7 @@ import { greeting, getRandomInt } from '../index.js'
 const runBrainPrime = () => {
   greeting()
   const name = readlineSync.question('May I have your name? ');
-  console.log(`Hellooo, ${name}!`);
+  console.log(`Hello, ${name}!`);
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".')
   let i = 0
 
@@ -22,7 +22,7 @@ const runBrainPrime = () => {
       }
 
     }
-    console.log(`Question:${randomNumber}`);
+    console.log(`Question: ${randomNumber}`);
     let answer = readlineSync.question('Your answer:')
     if (answer === correctAnswer) {
       console.log('Correct!');

@@ -3,7 +3,7 @@ import { greeting, getRandomInt, calculate } from '../index.js'
 const runBrainCalc = () => {
   greeting();
   const name = readlineSync.question('May I have your name? ');
-  console.log(`Hellooo, ${name}!`);
+  console.log(`Hello, ${name}!`);
   console.log('What is the result of the expression?')
   let i = 0;
 
