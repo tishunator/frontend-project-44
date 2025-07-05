@@ -4,7 +4,7 @@ export const greeting =()=>{
  
 }
 
-export const getRandomInt = (max) => Math.floor(Math.random() * max);
+export const getRandomInt = (max) => Math.floor(Math.random() * max)+1;
 export const calculate = (a, b, operator) => {
   switch (operator) {
     case '+':

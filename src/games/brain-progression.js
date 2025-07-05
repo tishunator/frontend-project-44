@@ -4,7 +4,7 @@ const runBrainProgression = () => {
   greeting()
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
-  console.log('What is the result of the expression?')
+  console.log('What number is missing in the progression?')
   let i = 0
   while (i < 3) {
     let result = []
