@@ -11,7 +11,7 @@ export const calculate = (a, b, operator) => {
     case '*':
       return a * b
     case '/':
-      return a / b  
+      return a / b
   }
 }
 export const nod = (a, b) => {
@@ -21,4 +21,4 @@ export const nod = (a, b) => {
     b = res
   }
   return b
-};
+}

@@ -7,7 +7,7 @@ export default defineConfig([
   js.configs.recommended,
 
   {
-    files: ['**/*.{js,mjs,cjs}'],          
+    files: ['**/*.{js,mjs,cjs}'],
     languageOptions: {
 
       globals: globals.node,
@@ -15,4 +15,4 @@ export default defineConfig([
       ecmaVersion: 'latest',
     },
   },
-]);
+])

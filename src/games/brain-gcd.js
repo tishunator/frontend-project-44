@@ -1,18 +1,18 @@
 import readlineSync from 'readline-sync'
 import { greeting, getRandomInt, nod } from '../index.js'
 
-const runBrainGcd =()=>{
+const runBrainGcd = () => {
   greeting()
   const name = readlineSync.question('May I have your name? ')
-  console.log(`Hello, ${name}!`);
+  console.log(`Hello, ${name}!`)
   console.log('Find the greatest common divisor of given numbers.')
   let i = 0
 
   while (i < 3) {
-  let a = getRandomInt(100)
-  let b = getRandomInt(100)
-  let randomExpr = `${a} ${b}`
-  let correctAnswer = nod(a, b)
+    let a = getRandomInt(100)
+    let b = getRandomInt(100)
+    let randomExpr = `${a} ${b}`
+    let correctAnswer = nod(a, b)
     console.log(`Question: ${randomExpr}`)
     let answer = readlineSync.question('Your answer:')
 
@@ -32,4 +32,3 @@ const runBrainGcd =()=>{
   }
 }
 export default runBrainGcd
-

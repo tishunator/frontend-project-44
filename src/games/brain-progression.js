@@ -10,7 +10,7 @@ const runBrainProgression = () => {
   while (i < 3) {
     let result = []
     const start = getRandomInt(20)
-    let step = getRandomInt(length) + 1;
+    let step = getRandomInt(length) + 1
     for (let n = 0; n < length; n++) {
       result.push(start + step * n)
     }
@@ -22,7 +22,7 @@ const runBrainProgression = () => {
     let answer = readlineSync.question('Your answer:')
 
     if (Number(answer) === correctAnswer) {
-      console.log('Correct!');
+      console.log('Correct!')
       i++
     }
     else {
