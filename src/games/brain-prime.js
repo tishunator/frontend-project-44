@@ -1,16 +1,16 @@
-import readlineSync from 'readline-sync';
+import readlineSync from 'readline-sync'
 import { greeting, getRandomInt } from '../index.js'
 const runBrainPrime = () => {
   greeting()
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
+  const name = readlineSync.question('May I have your name? ')
+  console.log(`Hello, ${name}!`)
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".')
   let i = 0
 
   while (i < 3) {
     let correctAnswer = 'yes'
     let randomNumber = getRandomInt(10)
-    const limit = Math.floor(Math.sqrt(randomNumber));
+    const limit = Math.floor(Math.sqrt(randomNumber))
     if (randomNumber < 2) {
       correctAnswer = 'no'
     }
@@ -20,23 +20,22 @@ const runBrainPrime = () => {
         correctAnswer = 'no'
         break
       }
-
     }
-    console.log(`Question: ${randomNumber}`);
+    console.log(`Question: ${randomNumber}`)
     let answer = readlineSync.question('Your answer:')
     if (answer === correctAnswer) {
-      console.log('Correct!');
+      console.log('Correct!')
       i++
     }
     else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
       console.log(`Let's try again, ${name}!`)
       break
     }
   }
 
   if (i === 3) {
-    console.log(`Congratulations, ${name}!`);
+    console.log(`Congratulations, ${name}!`)
   }
 }
 export default runBrainPrime
